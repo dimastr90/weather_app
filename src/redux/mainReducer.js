@@ -55,7 +55,7 @@ export const setAutoCompleteData = (payload) => ({type: SET_AUTOCOMPLETE_DATA, p
 //make request to API;
 export const makeSearch = (cityName) => async (dispatch) => {
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=3283c1e0d54cb615c6f2304a6d536bce`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=3283c1e0d54cb615c6f2304a6d536bce`);
         const data = await response.json();
 
         if (!response.ok) {
@@ -87,7 +87,7 @@ export const findCityInApi = (latitude, longitude) => async (dispatch) => {
 
 export const loadAutocompleteData = (requestString) => async (dispatch) => {
     try {
-        const response = await fetch(`http://geodb-free-service.wirefreethought.com/v1/geo/cities?limit=5&offset=0&namePrefix=${requestString}`);
+        const response = await fetch(`https://geodb-free-service.wirefreethought.com/v1/geo/cities?limit=5&offset=0&namePrefix=${requestString}`);
         const data = await response.json();
 
 
