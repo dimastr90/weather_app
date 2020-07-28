@@ -71,7 +71,7 @@ const InputForm = (props) => {
                                 />
                             </div>
                             <div className='geoButton'>
-                                <a className="btn-floating btn-large" onClick={locationButtonHandler}><i
+                                <a className="btn-floating btn-large" href='/#' onClick={locationButtonHandler}><i
                                     className="material-icons">location_on</i></a>
                             </div>
                         </div>
