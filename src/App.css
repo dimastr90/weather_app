@@ -1,0 +1,126 @@
+.inputCityName {
+    padding: 0.6em;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 7px;
+}
+
+.inputDiv {
+    padding: 0.3em;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+.geoButton{
+    display: grid;
+    margin-top:1.2em;
+    margin-left: 1em;
+}
+
+#inputAutoComplete {
+    height: 1em;
+}
+
+.inputCityName #icon_prefix {
+    color: red;
+}
+
+.inputCityName label {
+    color: black;
+}
+
+.forecastBlock {
+    color: white;
+}
+
+.weatherInfo {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 1.5em;
+}
+
+.forecastCityName {
+    color: white;
+    font-weight: bold;
+    padding: 0.1em;
+    border-radius: 6px;
+    font-size: 3em;
+}
+
+.forecastTemp {
+    font-size: 2em;
+}
+
+
+.longTermForecast {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.longTermBlock {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0.6em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.longTermHeader {
+    font-size: 2em;
+    color: white;
+}
+
+.addIcon {
+    margin: 0.1em;
+    padding: 0.1em;
+    color: blue;
+    cursor: pointer;
+}
+
+.addIcon i {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 0.2em;
+    text-align: center;
+}
+
+.favoritesBlock {
+    align: left;
+}
+
+
+.favoritesList {
+    margin-top: 0.3em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    width: 10em;
+    padding: 0.6em;
+    text-decoration: underline;
+}
+
+
+.favoritesListItem {
+    background: rgba(0, 0, 255, 0.4);
+    padding: 0.7em;
+    margin-bottom: 0.2em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+}
+
+
+
+
+
