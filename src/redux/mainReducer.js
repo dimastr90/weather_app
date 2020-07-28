@@ -87,7 +87,13 @@ export const findCityInApi = (latitude, longitude) => async (dispatch) => {
 
 export const loadAutocompleteData = (requestString) => async (dispatch) => {
     try {
-        const response = await fetch(`https://geodb-free-service.wirefreethought.com/v1/geo/cities?limit=5&offset=0&namePrefix=${requestString}`);
+         const headers = ({
+            "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
+            "x-rapidapi-key": "76af1b9ccemsh23e9e4bd107a124p16fd4bjsnb4563375f831",
+            "useQueryString": true
+        });
+
+        const response = await fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/cities?limit=5&offset=0&namePrefix=${requestString}`, {headers: headers});
         const data = await response.json();
 
 
